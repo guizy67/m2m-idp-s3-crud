@@ -2,6 +2,15 @@
 
 This document provides detailed implementation guidance and a comprehensive task list for building the OIDC AWS S3 Uploader infrastructure.
 
+## Table of Contents
+
+- [1. Prerequisites](#1-prerequisites)
+- [2. Implementation Tasks](#2-implementation-tasks)
+- [3. File Inventory](#3-file-inventory)
+- [4. Dependency Order](#4-dependency-order)
+- [5. Sensitive Data Handling](#5-sensitive-data-handling)
+- [6. Rollback Procedures](#6-rollback-procedures)
+
 ## 1. Prerequisites
 
 ### 1.1 Required Accounts & Access

@@ -2,6 +2,17 @@
 
 This document describes the final implementations for the OIDC AWS S3 Uploader, covering both Auth0 and AWS Cognito as identity providers.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Architecture Comparison](#architecture-comparison)
+- [Why Cognito Requires Credential Vending](#why-cognito-requires-credential-vending)
+- [Terraform Implementation](#terraform-implementation)
+- [Python Client Implementation](#python-client-implementation)
+- [S3 Permission Levels](#s3-permission-levels)
+- [Security Considerations](#security-considerations)
+- [Troubleshooting](#troubleshooting)
+
 ## Overview
 
 This project enables credential-free S3 uploads from on-premises servers using OIDC (OpenID Connect) federation. Two identity provider options are supported:

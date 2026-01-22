@@ -1,5 +1,19 @@
 # OIDC AWS S3 Uploader - Terraform Deployment Specification
 
+## Table of Contents
+
+- [1. Overview](#1-overview)
+- [2. Architecture](#2-architecture)
+- [3. Terraform Project Structure](#3-terraform-project-structure)
+- [4. Component Specifications](#4-component-specifications)
+- [5. State Management](#5-state-management)
+- [6. Provider Configuration](#6-provider-configuration)
+- [7. Security Considerations](#7-security-considerations)
+- [8. Deployment Workflow](#8-deployment-workflow)
+- [9. Outputs for Server Configuration](#9-outputs-for-server-configuration)
+- [10. Log Shipper Integration](#10-log-shipper-integration)
+- [11. Python Client Example](#11-python-client-example)
+
 ## 1. Overview
 
 This document specifies the Terraform-based infrastructure for deploying credential-free S3 uploads from on-premises servers using OIDC federation. The design prioritizes:

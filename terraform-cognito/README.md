@@ -2,6 +2,19 @@
 
 This directory contains Terraform configuration for deploying the OIDC S3 Uploader using **AWS Cognito** as the identity provider instead of Auth0.
 
+## Table of Contents
+
+- [Architecture](#architecture)
+- [Key Differences from Auth0](#key-differences-from-auth0)
+- [Cognito M2M Access Token Structure](#cognito-m2m-access-token-structure)
+- [Directory Structure](#directory-structure)
+- [Deployment](#deployment)
+- [Adding a New Server](#adding-a-new-server)
+- [Using with Python Client](#using-with-python-client)
+- [How It Works](#how-it-works)
+- [Sharing S3 Bucket with Auth0 Deployment](#sharing-s3-bucket-with-auth0-deployment)
+- [Cleanup](#cleanup)
+
 ## Architecture
 
 ```
