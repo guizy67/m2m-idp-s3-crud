@@ -77,6 +77,20 @@ python scripts/s3_ops.py list
 python scripts/oidc_credential_provider.py get-credentials
 ```
 
+## Log Shipper Integration
+
+For log shippers (Vector, Fluent Bit, Logstash), the recommended approach is using AWS SDK's `credential_process` for automatic credential refresh:
+
+```ini
+# ~/.aws/config
+[profile oidc-s3]
+credential_process = python3 /opt/oidc-s3/oidc_credential_provider.py get-credentials
+```
+
+Then configure your log shipper with `AWS_CONFIG_FILE` and `AWS_PROFILE=oidc-s3`. The AWS SDK calls the script automatically when credentials expire—no restarts required.
+
+See [INSTALL.md](INSTALL.md#log-shipper-integration) for complete setup instructions.
+
 ## Documentation
 
 | Document                                                   | Description                        |
